@@ -1,0 +1,28 @@
+/* Paleta inspirada directamente en el azul y rojo del logotipo KAINOS. */
+:root {
+  --ink: #061a3a;
+  --ink-soft: #0c2e61;
+  --blue: #0759c7;
+  --blue-deep: #03439d;
+  --sky: #65b9f1;
+  --red: #df1726;
+  --red-deep: #b80d1b;
+  --paper: #f4f7fb;
+}
+
+.site-header { background: rgba(244, 247, 251, .92); border-bottom-color: rgba(6, 26, 58, .08); }
+.nav-cta { border-bottom: 2px solid var(--red); }
+.eyebrow span { background: var(--red); }
+.button-primary { background: var(--blue); box-shadow: inset 0 -2px 0 rgba(255, 255, 255, .18); }
+.button-primary:hover { background: var(--blue-deep); }
+.cross-b { background: var(--red); }
+.service-card:nth-child(even) .service-icon { color: var(--red); }
+.service-card-featured { border-bottom: 3px solid var(--red); }
+.service-card-featured .service-icon { color: #ff6872; }
+.contact-cta { background: var(--red); border-left: 5px solid var(--blue); }
+.contact-cta .eyebrow span { background: #fff; }
+.process-steps li:nth-child(even):not(:last-child):after { background: var(--red); }
+
+@media (max-width: 760px) {
+  .contact-cta { border-left-width: 4px; }
+}
