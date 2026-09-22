@@ -172,3 +172,33 @@ input:focus, textarea:focus { border-bottom-color: var(--blue); box-shadow: 0 2p
   .contact { grid-template-columns: 1fr; gap: 52px; padding: 78px 0; }
   .form-row { grid-template-columns: 1fr; gap: 0; }
 }
+
+/* Ajustes móviles para mantener la propuesta y el contacto a la vista. */
+@media (max-width: 760px) {
+  .menu-toggle { min-width: 44px; min-height: 44px; }
+  .nav-links { max-height: calc(100dvh - 84px); overflow-y: auto; }
+  .hero { gap: 24px; padding-top: 38px; }
+  .hero-mark { order: 0; height: 190px; }
+  .hero-mark img { width: 100px; height: 100px; }
+  .hero h1 { font-size: clamp(39px, 10.5vw, 52px); }
+  .hero-text { font-size: 16px; margin: 19px 0 24px; }
+  .hero-actions { gap: 18px; }
+  .hero-actions .button { min-height: 52px; }
+  .location { margin-top: 25px; }
+  .service-card, .service-card:first-child { min-height: 0; padding: 21px 18px 22px 62px; }
+  .service-card h3 { font-size: 20px; margin-top: 11px; }
+  .service-card p + p { margin-top: 7px; }
+  .projects .project-grid { gap: 14px; border: 0; }
+  .project-card { border: 1px solid #cbd8e4; }
+  .project-card:first-child .project-visual, .project-visual { height: 190px; }
+  .project-info { padding: 19px; }
+  .contact { gap: 32px; padding: 65px 0; }
+  .contact-form { padding: 18px 0 0; }
+  .contact-form label { margin-top: 18px; font-size: 13px; }
+  .contact-form input, .contact-form textarea { font-size: 16px; padding: 12px 0; }
+  .contact-form .button { width: 100%; min-height: 52px; }
+  .form-note { font-size: 12px; line-height: 1.6; }
+  .privacy-note { padding: 34px 0; background: var(--mist); }
+  .privacy-note h2 { margin: 0 0 8px; font: 700 20px var(--display); }
+  .privacy-note p { margin: 0; color: #526c84; font-size: 13px; }
+}
